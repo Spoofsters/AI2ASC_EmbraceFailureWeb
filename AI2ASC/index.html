@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Where Do You Want to Improve?</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <img src="images/asclogo3.png" alt="Logo" style="height: 50px;"> <!-- Adjust the height as needed -->
+        </div>
+        <ul>
+            <li><a href="#main-section">Analyzing & Suggestion Box</a></li>
+            <li><a href="#template-1">Taking Action</a></li>
+            <li><a href="#template-2">Resources</a></li>
+        </ul>
+    </nav>
+    <!-- Welcome message section -->
+    <section id="welcome-section">
+        <div>
+            <h1 id="big-message">Celebrate Failure</h1>
+            <p id="scroll-prompt">Scroll Down to Begin</p>
+        </div>
+        <div class="image-container">
+            <img id="welcome-image" src="images/bailey_sidehi.png" alt="Welcome Image">
+            <i class="fas fa-lightbulb icon"></i> <!-- Icon next to the welcome image -->
+        </div>
+    </section>
+
+    <!-- Main content with textbox -->
+    <section id="main-section">
+        <h2>How can we help?</h2>
+        <textarea id="problem-input" placeholder="Write your challenge or problem here..."></textarea>
+        <button id="submit-button">Get Suggestions</button>
+        <div id="suggestions" style="margin-top: 20px;"></div> <!-- Div to display suggestions -->
+    </section>
+
+    <section class="template" id="template-1">
+        <h2>Failing Forwards</h2>
+        <h3>Take note of your challenges, and see your progress over time!</h3>
+        
+        <div class="charts-container">
+            <div class="chart">
+                <h4 class="chart-header">Failures</h4>
+                <ul id="failures-list">
+                    <li>
+                        <input type="text" placeholder="Enter your challenge..." class="challenge-input">
+                        <button class="complete-button">Complete</button>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="chart">
+                <h4 class="chart-header">I will succeed by</h4>
+                <ul id="success-list">
+                    <!-- This will be populated dynamically -->
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="template" id="template-2">
+        <h2>Resources</h2>
+        <h3>Heya! I reccomend checking out this Therapist Chatbot if you need more help or couldn't find what you were looking for here!</h3>
+        <h3>Please feel free to reach out to me by GitHub, and thank our sponsor AllStarCode!</h3>
+        <div id="resource-links">
+            <h3>Helpful Resources:</h3>
+            <div class="links-container">
+                <div class="resource-item">
+                    <img src="images/chatgpt.png" alt="ChatGPT Therapist Icon" class="resource-icon"> <!-- Icon for ChatGPT Therapist -->
+                    <a href="https://chatgpt.com/g/g-FGhasb1tZ-therapist-psychologist-non-medical-therapy" target="_blank">ChatGPT Therapist</a>
+                </div>
+                <div class="resource-item">
+                    <img src="images/cow.png" alt="Meet The Creator Icon" class="resource-icon"> <!-- Icon for Meet The Creator -->
+                    <a href="https://github.com/Spoofsters" target="_blank">Meet The Creator</a>
+                </div>
+                <div class="resource-item">
+                    <img src="images/ASC.png" alt="AllStarCode Foundation Icon" class="resource-icon"> <!-- Icon for AllStarCode Foundation -->
+                    <a href="https://allstarcode.org/" target="_blank">AllStarCode Foundation</a>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img id="final-image" src="images/baileycute.png" alt="Final Image">
+            <i class="fas fa-check-circle icon"></i> <!-- Icon next to the final image -->
+        </div>
+    </section>
+
+    <script src="fix.js"></script>
+
+    <footer>RAFAEL MARTOS - TECH TITANS GRADUATE, AI-HACKATHON FOR THE WIN!</footer>
+
+    <!-- Add the audio element here -->
+    <audio src="song/audio.mp3" autoplay loop></audio>
+</body>
+</html>
